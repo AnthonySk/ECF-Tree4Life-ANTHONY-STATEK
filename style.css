@@ -1,7 +1,31 @@
 /* link color 
     https://colorhunt.co/palette/191a191e51284e9f3dd8e9a8 */
+    /* #0e210e
+    #1E5128
+    #4E9F3D
+    #D8E9A8 */
 
 /* START WHOLE SITE */
+@media (min-width: 960px) {
+    body {
+        background-color: red ;
+    }
+    .navMenuSmallScreen {
+        display: none;
+    }
+    .navMenuLargeScreen {
+        display: inline-block !important;
+    }
+}
+
+.navMenuLargeScreen {
+    display: none;
+}
+
+main {
+    height: 1000px;
+}
+
 .btn {
     background-color: #D8E9A8;
     border: 0;
@@ -16,6 +40,10 @@
 }
 /* Passer au dessus du :active de bootstrap */
 
+.btn:focus {
+    background-color: #D8E9A8;
+}
+
 /* END WHOLE SITE */
 
 
@@ -23,8 +51,8 @@
 
 
 /* START HEADER */
-.header {
-    background-color: #191A19;
+.header, .footer {
+    background-color: #0e210e;
     color: #D8E9A8;
     height: 90px;
 }
@@ -40,4 +68,13 @@
 /* ------------------------------------------------------------- */
 
 
-/* START ??? */
+/* START MAIN */
+
+/* END MAIN */
+
+/* ------------------------------------------------------------- */
+
+
+/* START FOOTER */
+
+/* END FOOTER */

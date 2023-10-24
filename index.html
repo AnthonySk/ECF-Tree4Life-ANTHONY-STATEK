@@ -16,11 +16,11 @@
 
 
     <!-- START HEADER -->
-    <header class="p-2 header container-fluid">
+    <header class="container-fluid header sticky-top p-2">
         <div class="d-flex align-items-center">
             <img class="col-1 img-fluid logo" src="/image/Logo Tree4Life.jpg" alt="Logo Arbre et racines ">
-            <h1 class="col-7 p-1 ">Tree4Life</h1>
-            <nav class="col-2 ms-auto">
+            <h1 class="col-7 p-1">Tree4Life</h1>
+            <nav class="col-2 ms-auto navMenuSmallScreen" aria-label="Navigation menu small screen">
                 <button class="btn"  data-bs-toggle="dropdown" aria-expanded="false">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="black" class="bi bi-list-ul" viewBox="0 0 16 16">
                         <path fill-rule="evenodd" d="M5 11.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm-3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
@@ -29,7 +29,13 @@
                 <ul class="dropdown-menu">
                     <li><a class="dropdown-item" type="button" href="">Événements</a></li>
                     <li><a class="dropdown-item" type="button" href="">Labels</a></li>
+                    <li><a class="dropdown-item" type="button" href="">La team</a></li>
                 </ul>
+            </nav>
+            <nav aria-label="Navigation menu large screen" class="navMenuLargeScreen">
+                <button class="btn me-2" type="button" href="">Événements</button>
+                <button class="btn ms-2 me-2" type="button" href="">Labels</button>
+                <button class="btn ms-2" type="button" href="">La team</button>
             </nav>
         </div>
     </header>
@@ -46,7 +52,7 @@ main
 
 
     <!-- START FOOTER -->
-    <footer>
+    <footer class="">
 footer
     </footer>
     <!-- END FOOTER -->
