@@ -1,0 +1,43 @@
+/* link color 
+    https://colorhunt.co/palette/191a191e51284e9f3dd8e9a8 */
+
+/* START WHOLE SITE */
+.btn {
+    background-color: #D8E9A8;
+    border: 0;
+}
+
+.btn:hover{
+    background-color: #1E5128;
+}
+
+.btn:active{
+    background-color: #D8E9A8 !important;
+}
+/* Passer au dessus du :active de bootstrap */
+
+/* END WHOLE SITE */
+
+
+/* ------------------------------------------------------------- */
+
+
+/* START HEADER */
+.header {
+    background-color: #191A19;
+    color: #D8E9A8;
+    height: 90px;
+}
+
+.logo {
+    border-radius: 100%;
+    width: 80px;
+}
+
+/* END HEADER */
+
+
+/* ------------------------------------------------------------- */
+
+
+/* START ??? */
