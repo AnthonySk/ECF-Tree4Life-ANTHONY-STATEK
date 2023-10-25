@@ -1,12 +1,15 @@
-/* link color 
+/* COLOR
     https://colorhunt.co/palette/191a191e51284e9f3dd8e9a8 */
     /* #0e210e
     #1E5128
     #4E9F3D
     #D8E9A8 */
 
-/* START WHOLE SITE */
-@media (min-width: 960px) {
+
+
+
+    /* MEDIA QUERIES */
+@media (min-width: 992px) {
     body {
         background-color: red ;
     }
@@ -16,11 +19,17 @@
     .navMenuLargeScreen {
         display: inline-block !important;
     }
+
 }
 
-.navMenuLargeScreen {
-    display: none;
+@media (min-width: 576px) {
+    .footerLargeScreen {
+        display: inline-block !important;
+    }
 }
+
+
+/* START WHOLE SITE */
 
 main {
     height: 1000px;
@@ -51,7 +60,7 @@ main {
 
 
 /* START HEADER */
-.header, .footer {
+.header {
     background-color: #0e210e;
     color: #D8E9A8;
     height: 90px;
@@ -60,6 +69,10 @@ main {
 .logo {
     border-radius: 100%;
     width: 80px;
+}
+
+.navMenuLargeScreen {
+    display: none;
 }
 
 /* END HEADER */
@@ -77,4 +90,21 @@ main {
 
 /* START FOOTER */
 
+.footer {
+    background-color: #0e210e;
+    color: #D8E9A8;
+    font-size: 12px;
+}
+
+.footer .logo {
+    width: 60px;
+}
+
+.footerLargeScreen {
+    display: none;
+}
+
+.copyright {
+    font-size: 10px;
+}
 /* END FOOTER */
