@@ -12,17 +12,17 @@
 /* ------------------------------------------------------------- */
 /* MEDIA QUERIES */
     /* Navbar with icon */
-@media (min-width: 960px) {
+@media (min-width: 961px) {
     body {
         background-color: red ;
     }
-    .navMenuMobileFirst {
+    .navBarMobileFirst {
         display: none;
     }
-    .navMenuSmallScreen{
+    .navBarSmallScreen{
         display: none;
     }
-    .navMenuLargeScreen {
+    .navBarLargeScreen {
         display: inline-block !important;
     }
 }
@@ -34,13 +34,13 @@
     body {
         background-color: blue ;
     }
-    .navMenuMobileFirst {
+    .navBarMobileFirst {
         display: none;
     }
-    .navMenuSmallScreen {
+    .navBarSmallScreen {
         display: inline-block !important;
     }
-    .navMenuLargeScreen {
+    .navBarLargeScreen {
         display: none;
     }
 }
