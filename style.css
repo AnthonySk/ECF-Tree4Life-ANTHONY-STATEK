@@ -5,30 +5,63 @@
     #4E9F3D
     #D8E9A8 */
 
+    .hidden {
+        display: none;
+    }
 
-
-
-    /* MEDIA QUERIES */
-@media (min-width: 992px) {
+/* ------------------------------------------------------------- */
+/* MEDIA QUERIES */
+    /* Navbar with icon */
+@media (min-width: 960px) {
     body {
         background-color: red ;
     }
-    .navMenuSmallScreen {
+    .navMenuMobileFirst {
+        display: none;
+    }
+    .navMenuSmallScreen{
         display: none;
     }
     .navMenuLargeScreen {
         display: inline-block !important;
     }
-
 }
 
-@media (min-width: 576px) {
-    .footerLargeScreen {
+
+
+    /* Navbar without icon */
+@media (min-width: 720px) and (max-width: 960px) {
+    body {
+        background-color: blue ;
+    }
+    .navMenuMobileFirst {
+        display: none;
+    }
+    .navMenuSmallScreen {
         display: inline-block !important;
+    }
+    .navMenuLargeScreen {
+        display: none;
     }
 }
 
 
+
+/* Show contact details */
+@media (min-width: 576px) {
+    .footerSmallScreen {
+        display: inline-block !important;
+    }
+}
+
+/* END MEDIA QUERIES */
+/* ------------------------------------------------------------- */
+
+
+
+
+
+/* ------------------------------------------------------------- */
 /* START WHOLE SITE */
 
 main {
@@ -54,12 +87,16 @@ main {
 }
 
 /* END WHOLE SITE */
-
-
 /* ------------------------------------------------------------- */
 
 
+
+
+
+/* ------------------------------------------------------------- */
 /* START HEADER */
+
+
 .header {
     background-color: #0e210e;
     color: #D8E9A8;
@@ -71,23 +108,25 @@ main {
     width: 80px;
 }
 
-.navMenuLargeScreen {
-    display: none;
-}
 
 /* END HEADER */
-
-
 /* ------------------------------------------------------------- */
 
 
+
+
+
+/* ------------------------------------------------------------- */
 /* START MAIN */
 
 /* END MAIN */
-
 /* ------------------------------------------------------------- */
 
 
+
+
+
+/* ------------------------------------------------------------- */
 /* START FOOTER */
 
 .footer {
@@ -100,11 +139,9 @@ main {
     width: 60px;
 }
 
-.footerLargeScreen {
-    display: none;
-}
-
 .copyright {
     font-size: 10px;
 }
 /* END FOOTER */
+
+
