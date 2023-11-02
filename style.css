@@ -13,9 +13,6 @@
 /* MEDIA QUERIES */
     /* Navbar with icon */
 @media (min-width: 961px) {
-    body {
-        background-color: red ;
-    }
     .navBarMobileFirst {
         display: none;
     }
@@ -31,9 +28,6 @@
 
     /* Navbar without icon */
 @media (min-width: 720px) and (max-width: 960px) {
-    body {
-        background-color: blue ;
-    }
     .navBarMobileFirst {
         display: none;
     }
@@ -59,14 +53,8 @@
 
 
 
-
-
 /* ------------------------------------------------------------- */
 /* START WHOLE SITE */
-
-main {
-    height: 1000px;
-}
 
 .btn {
     background-color: #D8E9A8;
@@ -75,6 +63,7 @@ main {
 
 .btn:hover{
     background-color: #1E5128;
+    color: #D8E9A8;
 }
 
 .btn:active{
@@ -84,6 +73,18 @@ main {
 
 .btn:focus {
     background-color: #D8E9A8;
+}
+
+/* correction du probleme de .row */
+.row {
+    margin: -0.1px;
+} 
+
+footer button {
+    border: none;
+    background: none;
+    padding: 0px;
+    color: #D8E9A8;
 }
 
 /* END WHOLE SITE */
@@ -108,7 +109,6 @@ main {
     width: 80px;
 }
 
-
 /* END HEADER */
 /* ------------------------------------------------------------- */
 
@@ -118,7 +118,31 @@ main {
 
 /* ------------------------------------------------------------- */
 /* START MAIN */
+.landingPage {
+    background-image: url(/image/forestLandingPage.jpeg);
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+}
 
+h2 {
+    color: #D8E9A8;
+    font-size: 25px;
+    padding-top: 20vh; 
+}
+
+aside p, ul {
+    font-weight: 600;
+}
+
+li {
+    font-weight: 400;
+}
+
+quote {
+    font-style: italic;
+}
 /* END MAIN */
 /* ------------------------------------------------------------- */
 
@@ -140,6 +164,10 @@ main {
 }
 
 .copyright {
+    font-size: 10px;
+}
+
+.modalPrivateData {
     font-size: 10px;
 }
 /* END FOOTER */
