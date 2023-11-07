@@ -1,12 +1,18 @@
 /* COLOR
     https://colorhunt.co/palette/191a191e51284e9f3dd8e9a8 */
-    /* #0e210e
+    /* 
+    #0e210e
     #1E5128
     #4E9F3D
-    #D8E9A8 */
+    #D8E9A8 
+    */
 
     .hidden {
         display: none;
+    }
+
+    .show {
+        display: block;
     }
 
 /* ------------------------------------------------------------- */
@@ -21,6 +27,10 @@
     }
     .navBarLargeScreen {
         display: inline-block !important;
+    }
+
+    .eventPicture {
+        display: block !important;
     }
 }
 
@@ -37,6 +47,9 @@
     .navBarLargeScreen {
         display: none;
     }
+    .titleProjectPage {
+        font-size: 40px !important;
+    }
 }
 
 
@@ -45,6 +58,10 @@
 @media (min-width: 576px) {
     .footerSmallScreen {
         display: inline-block !important;
+    }
+
+    div .titleProjectPage {
+        font-size: 35px;
     }
 }
 
@@ -56,6 +73,14 @@
 /* ------------------------------------------------------------- */
 /* START WHOLE SITE */
 
+.greenDarkColor {
+    color: #0e210e;
+}
+
+.bgGreenDarkLightColor {
+    background-color: #1E5128;
+    color: #D8E9A8;
+}
 .btn {
     background-color: #D8E9A8;
     border: 0;
@@ -87,6 +112,10 @@ footer button {
     color: #D8E9A8;
 }
 
+.text-justify {
+    text-align: justify;
+    text-justify: inter-word;
+}
 /* END WHOLE SITE */
 /* ------------------------------------------------------------- */
 
@@ -126,23 +155,30 @@ footer button {
     height: 100vh;
 }
 
+.projectPage{
+    background-image: url(image/forestProjectPage.webp);
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+
 h2 {
     color: #D8E9A8;
     font-size: 25px;
     padding-top: 20vh; 
 }
 
-aside p, ul {
-    font-weight: 600;
-}
-
-li {
-    font-weight: 400;
-}
-
-quote {
+blockquote {
     font-style: italic;
 }
+
+.titleProjectPage {
+    color: #D8E9A8;
+    font-size: 25px;
+}
+
 /* END MAIN */
 /* ------------------------------------------------------------- */
 
@@ -170,6 +206,11 @@ quote {
 .modalPrivateData {
     font-size: 10px;
 }
+
+footer form :nth-child(6) :first-child{
+    width: 70px;
+    height: 30px;
+    font-size: 10px;
+}
+
 /* END FOOTER */
-
-
