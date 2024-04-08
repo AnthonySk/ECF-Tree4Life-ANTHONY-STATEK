@@ -7,11 +7,11 @@
     #D8E9A8 
     */
 
-    .hidden {
+    .nav__menu--hide {
         display: none;
     }
 
-    .show {
+    .nav__menu--show {
         display: block;
     }
 
@@ -19,13 +19,13 @@
 /* MEDIA QUERIES */
     /* Navbar with icon */
 @media (min-width: 961px) {
-    .navBarMobileFirst {
+    .navbar__mobile--changeDisplay { 
         display: none;
     }
-    .navBarSmallScreen{
+    .navbar__smallScreen--changeDisplay{
         display: none;
     }
-    .navBarLargeScreen {
+    .navbar__largeScreen--changeDisplay {
         display: inline-block !important;
     }
 
@@ -38,16 +38,16 @@
 
     /* Navbar without icon */
 @media (min-width: 720px) and (max-width: 960px) {
-    .navBarMobileFirst {
+    .navbar__mobile--changeDisplay {
         display: none;
     }
-    .navBarSmallScreen {
+    .navbar__smallScreen--changeDisplay {
         display: inline-block !important;
     }
-    .navBarLargeScreen {
+    .navbar__largeScreen--changeDisplay {
         display: none;
     }
-    .titleProjectPage {
+    .div__p--color--size {
         font-size: 40px !important;
     }
 }
@@ -60,7 +60,7 @@
         display: inline-block !important;
     }
 
-    div .titleProjectPage {
+    div .div__p--color--size {
         font-size: 35px;
     }
 }
@@ -73,11 +73,11 @@
 /* ------------------------------------------------------------- */
 /* START WHOLE SITE */
 
-.greenDarkColor {
+.footer__modal--color {
     color: #0e210e;
 }
 
-.bgGreenDarkLightColor {
+.main__background--color {
     background-color: #1E5128;
     color: #D8E9A8;
 }
@@ -127,13 +127,13 @@ footer button {
 /* START HEADER */
 
 
-.header {
+header {
     background-color: #0e210e;
     color: #D8E9A8;
     height: 90px;
 }
 
-.logo {
+.header__logo--size, .footer__logo--size {
     border-radius: 100%;
     width: 80px;
 }
@@ -147,7 +147,7 @@ footer button {
 
 /* ------------------------------------------------------------- */
 /* START MAIN */
-.landingPage {
+.home__background--image {
     background-image: url(/image/forestLandingPage.jpeg);
     background-size: cover;
     background-position: center;
@@ -155,7 +155,7 @@ footer button {
     height: 100vh;
 }
 
-.projectPage{
+.project__background--image {
     background-image: url(image/forestProjectPage.webp);
     background-size: cover;
     background-position: center;
@@ -174,7 +174,7 @@ blockquote {
     font-style: italic;
 }
 
-.titleProjectPage {
+.div__p--color--size {
     color: #D8E9A8;
     font-size: 25px;
 }
@@ -189,21 +189,21 @@ blockquote {
 /* ------------------------------------------------------------- */
 /* START FOOTER */
 
-.footer {
+footer {
     background-color: #0e210e;
     color: #D8E9A8;
     font-size: 12px;
 }
 
-.footer .logo {
+footer .logo {
     width: 60px;
 }
 
-.copyright {
+.footer__copyright--size {
     font-size: 10px;
 }
 
-.modalPrivateData {
+.footer__privateData--size {
     font-size: 10px;
 }
 
